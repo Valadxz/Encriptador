@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Desafío Encriptador de texto</title>
+</head>
+
+<body class="fondo">
+    <nav>
+        <img src="assets/img/logo.png" class="logo" alt="Logo Alura">
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <br>
+                <textarea class="caja" id="inputText" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div class="row">
+                    <p><img src="assets/img/icons/bi_exclamation-circle-fill.png" alt="Exclamación"> Solo letras
+                        minúsculas y sin acentos</p>
+                    <div class="container-button">
+                        <button class="encriptar-btn" id="encryptBtn">Encriptar</button>
+                        <button class="desencriptar-btn" id="decryptBtn">Desencriptar</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-3 seccion2" style="margin-top: 20px;">
+
+                <img src="assets/img/muneco.png" alt="" class="imagen">
+                <p class="text-center mensaje"><strong>Ningún mensaje fue encontrado<br></strong>Ingresa el texto que
+                    desees encriptar o desencriptar.</p>
+                <textarea class="caja2" id="outputText" rows="4" readonly style="display: none;"></textarea>
+                <button class="copiar-btn" id="copyBtnEncrypt" style="display: none;">Copiar Encriptado</button>
+                <button class="copiar-btn" id="copyBtnDecrypt" style="display: none;">Copiar Desencriptado</button>
+
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pie"><a href="https://github.com/Valadxz" target="_blank">Hecho por Juan Felipe Valadez Jiménez
+            &copy; 2024</a></footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
